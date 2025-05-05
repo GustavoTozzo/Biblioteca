@@ -1,0 +1,4 @@
+id;idUsuario;nomeCompleto;email;cpf;idLivro;titulo;autor;descricao;categoria;imagemCapa;dataInicio;dataFim
+1;2;Julia;julia@gmail.com;98765432100;1;O Senhor dos Anéis;J.R.R. Tolkien;Fantasia épica com elfos, anões e um grande anel;Fantasia;capa1.jpg;2025-05-08;2025-05-15
+2;1;Gustavo;gustavo@gmail.com;12345678900;4;Harry Potter e a Pedra Filosofal;J.K. Rowling;A magia começa com o jovem Harry Potter e seus amigos;Fantasia;capa4.jpg;2025-04-12;2025-05-15
+3;1;Gustavo;gustavo@gmail.com;12345678900;2;Dom Quixote;Miguel de Cervantes;A história de um cavaleiro enlouquecido pela leitura;Clássico;capa2.jpg;2025-08-12;2025-05-15
