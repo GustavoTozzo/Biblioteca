@@ -15,20 +15,4 @@ public class AluguelCSV {
         }
         writer.close();
     }
-
-    public static List<Aluguel> carregarAlugueis(String caminhoArquivo) throws IOException {
-        List<Aluguel> alugueis = new ArrayList<>();
-        BufferedReader reader = new BufferedReader(new FileReader(caminhoArquivo));
-        String linha;
-        boolean primeiraLinha = true;
-        while ((linha = reader.readLine()) != null) {
-            if (primeiraLinha) {
-                primeiraLinha = false;
-                continue;
-            }
-            alugueis.add(Aluguel.fromCSV(linha));
-        }
-        reader.close();
-        return alugueis;
-    }
 }

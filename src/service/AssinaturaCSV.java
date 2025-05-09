@@ -15,20 +15,4 @@ public class AssinaturaCSV {
         }
         writer.close();
     }
-
-    public static List<Assinatura> carregarAssinaturas(String caminhoArquivo) throws IOException {
-        List<Assinatura> assinaturas = new ArrayList<>();
-        BufferedReader reader = new BufferedReader(new FileReader(caminhoArquivo));
-        String linha;
-        boolean primeiraLinha = true;
-        while ((linha = reader.readLine()) != null) {
-            if (primeiraLinha) {
-                primeiraLinha = false;
-                continue;
-            }
-            assinaturas.add(Assinatura.fromCSV(linha));
-        }
-        reader.close();
-        return assinaturas;
-    }
 }
