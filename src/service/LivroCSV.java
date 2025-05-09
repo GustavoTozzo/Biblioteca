@@ -15,20 +15,4 @@ public class LivroCSV {
         }
         writer.close();
     }
-
-    public static List<Livro> carregarLivros(String caminhoArquivo) throws IOException {
-        List<Livro> livros = new ArrayList<>();
-        BufferedReader reader = new BufferedReader(new FileReader(caminhoArquivo));
-        String linha;
-        boolean primeiraLinha = true;
-        while ((linha = reader.readLine()) != null) {
-            if (primeiraLinha) {
-                primeiraLinha = false;
-                continue;
-            }
-            livros.add(Livro.fromCSV(linha));
-        }
-        reader.close();
-        return livros;
-    }
 }

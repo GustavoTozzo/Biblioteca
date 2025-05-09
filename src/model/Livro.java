@@ -20,16 +20,4 @@ public class Livro {
     public String toCSV() {
         return id + ";" + titulo + ";" + autor + ";" + descricao + ";" + categoria + ";" + imagemCapa;
     }
-
-    public static Livro fromCSV(String csv) {
-        String[] parts = csv.split(";");
-        return new Livro(
-                Integer.parseInt(parts[0]),
-                parts[1],
-                parts[2],
-                parts[3],
-                parts[4],
-                parts[5]
-        );
-    }
 }

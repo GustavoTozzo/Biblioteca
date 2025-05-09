@@ -17,13 +17,4 @@ public class Usuario {
         return id + ";" + nomeCompleto + ";" + email + ";" + cpf;
     }
 
-    public static Usuario fromCSV(String csv) {
-        String[] parts = csv.split(";");
-        return new Usuario(
-                Integer.parseInt(parts[0]),
-                parts[1],
-                parts[2],
-                parts[3]
-        );
-    }
 }
